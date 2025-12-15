@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>샬레 학생명부</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- 전역 스타일 -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 공통 헤더 영역 -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="/">샬레 학생명부</a>
+      </div>
+
+      <!-- 글로벌 내비게이션 -->
+      <nav class="main-nav">
+        <a href="#">홈</a>
+        <a href="#">학원별</a>
+        <a href="#">포지션별</a>
+        <a href="#">프로젝트 소개</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 메인 레이아웃: 좌측 콘텐츠 / 우측 사이드바 -->
+    <!-- 메인 레이아웃: 좌측 콘텐츠 / 우측 사이드바 -->
+  <main class="site-main container">
+    <!-- 메인 콘텐츠 영역: 학생 카드 리스트 -->
+    <section class="content" aria-label="학생 목록">
+      <h1 class="section-title">샬레 학생명부</h1>
+
+      <!-- 간단 안내 문구 -->
+      <p class="lead">
+        블루 아카이브 학생 정보를 정리한 팬 메이드 학생명부입니다. 아래 카드는 예시 데이터입니다.
+      </p>
+
+      <!-- 학생 카드 리스트 -->
+      <div class="student-list">
+        <!-- 학생 카드 1 -->
+        <article class="student-card">
+          <header class="student-header">
+            <h2 class="student-name">시로코</h2>
+            <div class="student-meta">
+              <span class="badge badge-academy">아비도스</span>
+              <span class="badge badge-role">공격</span>
+              <span class="badge badge-rarity">★3</span>
+            </div>
+          </header>
+          <p class="student-desc">
+            아비도스 고등학교 대책위원회의 일원. 침착하고 진지한 타입이지만 동료들을 누구보다 신경 쓰는 학생입니다.
+          </p>
+        </article>
+
+        <!-- 학생 카드 2 -->
+        <article class="student-card">
+          <header class="student-header">
+            <h2 class="student-name">히후미</h2>
+            <div class="student-meta">
+              <span class="badge badge-academy">트리니티</span>
+              <span class="badge badge-role">지원</span>
+              <span class="badge badge-rarity">★3</span>
+            </div>
+          </header>
+          <p class="student-desc">
+            트리니티 종합학원의 학생. 온화한 성격과 마이페이스한 면모를 지니고 있으며, 서포트 역할에 특화되어 있습니다.
+          </p>
+        </article>
+
+        <!-- 학생 카드 3 -->
+        <article class="student-card">
+          <header class="student-header">
+            <h2 class="student-name">아루</h2>
+            <div class="student-meta">
+              <span class="badge badge-academy">게헨나</span>
+              <span class="badge badge-role">공격</span>
+              <span class="badge badge-rarity">★3</span>
+            </div>
+          </header>
+          <p class="student-desc">
+            ゲヘナ 학원 범죄대책위원회의 위원장. 폭발적인 화력과 카리스마를 지닌 문제아이자 리더입니다.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 사이드바 영역: 검색 및 필터 -->
+    <aside class="sidebar" aria-label="검색 및 필터">
+      <section class="widget">
+        <h2>검색</h2>
+        <form>
+          <input
+            type="search"
+            name="q"
+            placeholder="학생 검색…"
+            aria-label="학생 검색"
+          />
+        </form>
+      </section>
+
+      <section class="widget">
+        <h2>학원별</h2>
+        <ul>
+          <li><a href="#">아비도스</a></li>
+          <li><a href="#">트리니티</a></li>
+          <li><a href="#">밀레니엄</a></li>
+          <li><a href="#">게헨나</a></li>
+        </ul>
+      </section>
+    </aside>
+  </main>
+
+
+    <!-- 사이드바 영역: 검색, 필터, 카테고리 등 -->
+    <aside class="sidebar" aria-label="검색 및 필터">
+      <section class="widget">
+        <h2>검색</h2>
+        <form>
+          <input
+            type="search"
+            name="q"
+            placeholder="학생 검색…"
+            aria-label="학생 검색"
+          />
+        </form>
+      </section>
+
+      <!-- TODO: 학원별 / 포지션별 필터 위젯 추가 예정 -->
+      <section class="widget">
+        <h2>학원별</h2>
+        <ul>
+          <li><a href="#">아비도스</a></li>
+          <li><a href="#">트리니티</a></li>
+          <li><a href="#">밀레니엄</a></li>
+        </ul>
+      </section>
+    </aside>
+  </main>
+
+  <!-- 공통 푸터 영역 -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 샬레 학생명부 · Blue Archive 팬 프로젝트</p>
+    </div>
+  </footer>
+</body>
+</html>
